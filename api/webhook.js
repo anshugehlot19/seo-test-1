@@ -1,13 +1,23 @@
 const fetch = global.fetch;
 
 module.exports = async (req, res) => {
-  // Allow GET requests for readiness checks
+  // Set CORS headers for all responses
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-api-key');
+
+  // Handle browser preflight OPTIONS request
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
+  // Handle GET readiness check
   if (req.method === 'GET') {
     return res.status(200).json({ status: 'ok', message: 'Webhook endpoint ready' });
   }
 
   if (req.method !== 'POST') {
-    res.setHeader('Allow', ['GET', 'POST']);
+    res.setHeader('Allow', ['GET', 'POST', 'OPTIONS']);
     return res.status(405).json({ error: `Method ${req.method} Not Allowed` });
   }
 
@@ -20,9 +30,9 @@ module.exports = async (req, res) => {
   try {
     const body = req.body || {};
     
-    // Handle handshake or test connection pings gracefully without failing
-    if (!body.slug && !body.content && !body.updates) {
-      return res.status(200).json({ success: true, message: 'Webhook handshake successful' });
+    // Handle connection test pings or handshakes gracefully
+    if (!body.slug && !body.content && !body.updates && Object.keys(body).length === 0) {
+      return res.status(200).json({ success: true, message: 'Webhook connection verified successfully' });
     }
 
     const updates = body.updates || [body];
