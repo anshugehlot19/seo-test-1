@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Outscale Digital</title>
+  <meta name="description" content="Outscale Digital offers SEO, content marketing, B2B SaaS lead generation, web design, paid advertising, and brand strategy services." />
+  <link rel="canonical" href="https://seo-test-1-two.vercel.app/services/" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: { 50:'#eff6ff',100:'#dbeafe',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',900:'#1e3a8a' } }, boxShadow: { glow:'0 20px 50px rgba(37,99,235,0.2)' } } } }</script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="/" class="flex items-center gap-2 text-lg font-bold tracking-tight text-white">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-sm font-extrabold">OD</span>
+        <span>Outscale <span class="text-brand-400">Digital</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 md:flex">
+        <a href="/about.html" class="hover:text-white transition">About</a>
+        <a href="/services/" class="hover:text-white transition">Services</a>
+        <a href="/guides/b2b-lead-generation-guide.html" class="hover:text-white transition">Guides</a>
+        <a href="/contact.html" class="hover:text-white transition">Contact</a>
+      </nav>
+      <a href="/contact.html" class="rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-glow hover:bg-brand-500 transition">Get a Free Strategy Call</a>
+    </div>
+  </header>
+  <main class="pt-20">
+    <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold text-white sm:text-5xl">Our Services</h1>
+      <p class="mt-4 text-lg text-slate-300 max-w-2xl">We offer end-to-end marketing services designed to strengthen your online presence and drive meaningful business outcomes.</p>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="/services/b2b-saas-lead-generation.html" class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 hover:-translate-y-1 transition">
+          <h2 class="text-xl font-semibold text-white">B2B SaaS Lead Generation</h2>
+          <p class="mt-2 text-slate-400">Pipeline-first marketing for B2B SaaS companies.</p>
+        </a>
+        <a href="/services/" class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 hover:-translate-y-1 transition">
+          <h2 class="text-xl font-semibold text-white">SEO & Organic Growth</h2>
+          <p class="mt-2 text-slate-400">Technical audits, keyword strategy, and content that ranks.</p>
+        </a>
+        <a href="/services/" class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 hover:-translate-y-1 transition">
+          <h2 class="text-xl font-semibold text-white">Content Marketing</h2>
+          <p class="mt-2 text-slate-400">High-quality content that builds trust and authority.</p>
+        </a>
+        <a href="/services/" class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 hover:-translate-y-1 transition">
+          <h2 class="text-xl font-semibold text-white">Web Design & Development</h2>
+          <p class="mt-2 text-slate-400">Fast, responsive, conversion-focused websites.</p>
+        </a>
+        <a href="/services/" class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 hover:-translate-y-1 transition">
+          <h2 class="text-xl font-semibold text-white">Paid Advertising</h2>
+          <p class="mt-2 text-slate-400">Targeted campaigns optimized for leads and conversions.</p>
+        </a>
+        <a href="/services/" class="rounded-2xl border border-white/10 bg-slate-900/50 p-6 hover:-translate-y-1 transition">
+          <h2 class="text-xl font-semibold text-white">Brand Strategy</h2>
+          <p class="mt-2 text-slate-400">Positioning, messaging, and growth roadmaps.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-white/10 bg-slate-950 py-10 text-center text-sm text-slate-500">
+    <p>&copy; <span id="year"></span> Outscale Digital. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+EOF

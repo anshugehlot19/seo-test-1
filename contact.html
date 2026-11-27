@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Outscale Digital</title>
+  <meta name="description" content="Contact Outscale Digital to discuss your marketing goals. Get a free strategy call and learn how we can help your business grow." />
+  <link rel="canonical" href="https://seo-test-1-two.vercel.app/contact.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: { 50:'#eff6ff',100:'#dbeafe',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',900:'#1e3a8a' } } } } }</script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="/" class="flex items-center gap-2 text-lg font-bold tracking-tight text-white">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-sm font-extrabold">OD</span>
+        <span>Outscale <span class="text-brand-400">Digital</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 md:flex">
+        <a href="/about.html" class="hover:text-white transition">About</a>
+        <a href="/services/" class="hover:text-white transition">Services</a>
+        <a href="/guides/b2b-lead-generation-guide.html" class="hover:text-white transition">Guides</a>
+        <a href="/contact.html" class="hover:text-white transition">Contact</a>
+      </nav>
+      <a href="/contact.html" class="rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-glow hover:bg-brand-500 transition">Get a Free Strategy Call</a>
+    </div>
+  </header>
+  <main class="pt-20">
+    <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold text-white sm:text-5xl">Contact Us</h1>
+      <p class="mt-4 text-lg text-slate-300 max-w-2xl">Let's talk about your next growth opportunity.</p>
+      <div class="mt-8 rounded-2xl border border-white/10 bg-slate-900/60 p-6 sm:p-8 max-w-2xl">
+        <form class="space-y-5" action="#" method="post">
+          <div>
+            <label for="name" class="mb-2 block text-sm font-medium text-slate-200">Full Name</label>
+            <input id="name" name="name" type="text" required placeholder="Jane Doe" class="w-full rounded-lg border border-white/10 bg-slate-950 px-4 py-3 text-slate-100 placeholder-slate-500 outline-none ring-brand-500 focus:border-brand-500 focus:ring-2" />
+          </div>
+          <div>
+            <label for="email" class="mb-2 block text-sm font-medium text-slate-200">Email Address</label>
+            <input id="email" name="email" type="email" required placeholder="jane@company.com" class="w-full rounded-lg border border-white/10 bg-slate-950 px-4 py-3 text-slate-100 placeholder-slate-500 outline-none ring-brand-500 focus:border-brand-500 focus:ring-2" />
+          </div>
+          <div>
+            <label for="message" class="mb-2 block text-sm font-medium text-slate-200">Project Details</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your goals..." class="w-full rounded-lg border border-white/10 bg-slate-950 px-4 py-3 text-slate-100 placeholder-slate-500 outline-none ring-brand-500 focus:border-brand-500 focus:ring-2"></textarea>
+          </div>
+          <button type="submit" class="w-full rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white hover:bg-brand-500 transition">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-white/10 bg-slate-950 py-10 text-center text-sm text-slate-500">
+    <p>&copy; <span id="year"></span> Outscale Digital. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+EOF

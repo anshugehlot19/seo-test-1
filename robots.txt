@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seo-test-1-two.vercel.app/sitemap.xml
+EOF
